@@ -1,1 +1,7 @@
+#ToDo
+
 1. find digital microphone sensor to make ADC redundant
+2. create Timetable containing weekly goals
+3. formulate concept:
+  3a) how do the microcontrollers communicate with each other and the environment?
+  3b) how is the hardware connected? What if two microcontrollers need to access the same hardware (e.g. display)?
