@@ -1,0 +1,9 @@
+# ToDo Theremin
+
+1. function such that tone is played continuously
+2. how to generate the input melody (code) to be played
+3. create state machine
+  3a. check if melody correct
+  3b. intro sequence
+  3c. winning sequence
+4. texts for help buttons
