@@ -38,7 +38,7 @@ The goal is to play a simple melody. A tone is played by holding your hand a cer
 |--------|-------|
 | KW 21  | get familiar with sensors and connect them to esp 32|
 | KW 22  | create a rough software prototype for each task|
-| KW 23  | try out communication between two esp 32| 
+| KW 23  | try out wireless (MQTT) communication between two esp 32| 
 | KW 24  | Add Help Button and Hints |
 | KW 25  | Connect all the tasks |
 | KW 26  | 
