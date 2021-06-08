@@ -41,9 +41,9 @@ The goal is to play a simple melody. A tone is played by holding your hand a cer
 | KW 23  | try out communication between two esp 32| 
 | KW 24  | Add Help Button and Hints |
 | KW 25  | Connect all the tasks |
-| KW 26  | 
-| KW 27  | Finish Software and Hardware|
-| KW 28  | Build Hardware into Suitcase|
+| KW 26  | Finish Software and Hardware|
+| KW 27  | Build Hardware into Suitcase| 
+| KW 28  |
 | KW 29  | Final Presentation |
 
 ## BOM:
