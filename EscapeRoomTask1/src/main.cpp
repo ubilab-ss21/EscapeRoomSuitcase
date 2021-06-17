@@ -21,6 +21,7 @@ PubSubClient client(espClient);
 long currentTime, lastTime;
 int count = 0;
 char message[50];
+char recieved_msg[50];
 
 void setupWifi(){
   delay(100);
@@ -56,8 +57,14 @@ void reconnect(){
 void callback(char* topic, byte* payload, unsigned int length){
   Serial.print("Recieved message: ");
   Serial.println(topic);
+  String s = String((char*)payload);
   for(int i=0; i<length; i++){
     Serial.print((char) payload[i]);
+  }
+  if(s == "LED") {
+    digitalWrite(14, HIGH);
+    delay(2000);
+    digitalWrite(14, LOW);
   }
   Serial.println();
 
