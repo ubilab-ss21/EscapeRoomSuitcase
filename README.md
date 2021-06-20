@@ -20,7 +20,7 @@ Two switches are conencted to a bit shift register. One switch changes the input
 
 ### Task 3 Theremin
 
-The goal is to play a simple melody. A tone is played by holding your hand a certain distance from a time of flight sensor. The melody supposed to be played will be given and the display will give visual feedback if the right tone is played and how long it needs to be held for.
+The goal is to play a simple melody. A tone is played by holding your hand a certain distance from an ultra sonic sensor. The melody supposed to be played will be given and the display will give visual feedback if the right tone is played.
 
 ### Components
 
