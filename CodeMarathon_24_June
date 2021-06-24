@@ -10,8 +10,10 @@ Goals (with descending priority):
  5. help button + display
  
  Reached Goals:
- 1.
+ 1. works (different strings are send and lead to different actions --> turn led on/off/blink)
  2.
- 3.
+ 3a. [task2 needs no input] after completion of pressure task (task2) write on lcd the melody (sequence of notes)
+ 3b. [task3 gets input of task2] after completion of theremin task (task3) solution 8 leds blink
+ 3c. [task4 gets input of task3] 8 blinking leds have to be "copied" using shift register and Mealy automaton
  4.
  5.
