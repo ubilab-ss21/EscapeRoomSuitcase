@@ -1,0 +1,17 @@
+# Code Marathon 24.06
+
+Goals (with descending priority):
+ 1. finalize MQTT-Code
+ 2. make LED bar work (library?)
+ 3. connect Tasks: output of previous task is input of next task
+ 4. implement task 1: charge battery
+  4a. either with LED bar
+  4b. or with OLED display
+ 5. help button + display
+ 
+ Reached Goals:
+ 1.
+ 2.
+ 3.
+ 4.
+ 5.
