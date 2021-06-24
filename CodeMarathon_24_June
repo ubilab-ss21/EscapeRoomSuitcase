@@ -7,7 +7,9 @@ Goals (with descending priority):
  4. implement task 1: charge battery
   4a. either with LED bar
   4b. or with OLED display
+most certainly not today:
  5. help button + display
+ 6. timer (7-segment display)
  
  Reached Goals:
  1. works (different strings are send and lead to different actions --> turn led on/off/blink)
@@ -17,3 +19,4 @@ Goals (with descending priority):
  3c. [task4 gets input of task3] 8 blinking leds have to be "copied" using shift register and Mealy automaton
  4.
  5.
+ 6.
