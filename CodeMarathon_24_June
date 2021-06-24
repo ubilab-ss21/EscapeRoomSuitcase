@@ -13,10 +13,12 @@ most certainly not today:
  
  Reached Goals:
  1. works (different strings are send and lead to different actions --> turn led on/off/blink)
- 2.
+ 2. does not work with ESP32 (checked online) --> with Arduino no problem --> we would need an Arduino with Wifi (MQTT)
  3a. [task2 needs no input] after completion of pressure task (task2) write on lcd the melody (sequence of notes)
  3b. [task3 gets input of task2] after completion of theremin task (task3) solution 8 leds blink
  3c. [task4 gets input of task3] 8 blinking leds have to be "copied" using shift register and Mealy automaton
- 4.
- 5.
+ 4. microphon works (conversion via FFT from analog signal to loudness) --> task itself not implemented yet
+ 
+ stop here
+ 5. 
  6.
