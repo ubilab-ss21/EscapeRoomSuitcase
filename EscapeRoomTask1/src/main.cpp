@@ -1,8 +1,10 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
+#include <Grove_LED_Bar.h>
 
 
+Grove_LED_Bar bar( 9, 10, true);
 int fsrAnalogPin = 2; // FSR is connected to analog 0
 int fsrAnalogPin2 = 4; 
 int fsrReading;      // the analog reading from the FSR resistor divider
@@ -75,27 +77,35 @@ void callback(char* topic, byte* payload, unsigned int length){
 void setup(void) {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  setupWifi();
-  client.setServer(mqtt_server, 1883);
-  client.setCallback(callback);
+  //setupWifi();
+  //client.setServer(mqtt_server, 1883);
+  //client.setCallback(callback);
 }
 
 void loop(void) {
+ static float i = 0;
+ i++;
+ if(i > 10){
+   i = 0;
+ }
+ Serial.println(i);
+ bar.setLevel(i);
+ delay(500);
 
-  if (!client.connected()){
-    reconnect();
-  }
-  client.loop();
-
-  currentTime = millis();
-  if(currentTime - lastTime > 10000) {
-    count++;
-    snprintf(message, 75, "Count: %ld", count);
-    Serial.print("Sending Messsage: ");
-    Serial.println(message);
-    client.publish(pubTopic, message);
-    lastTime = millis();
-  }
+//  if (!client.connected()){
+//    reconnect();
+//  }
+//  client.loop();
+//
+//  currentTime = millis();
+//  if(currentTime - lastTime > 10000) {
+//    count++;
+//    snprintf(message, 75, "Count: %ld", count);
+//    Serial.print("Sending Messsage: ");
+//    Serial.println(message);
+//    client.publish(pubTopic, message);
+//    lastTime = millis();
+// }
   //while(1){
   //  // put your main code here, to run repeatedly:
   //  fsrReading = analogRead(fsrAnalogPin);

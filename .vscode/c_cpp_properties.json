@@ -3,16 +3,17 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Users/Michael/.platformio/packages/framework-arduinoespressif32/cores/esp32"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
+            "compilerPath": "C:/Users/Michael/.platformio/packages/toolchain-xtensa32/bin/xtensa-esp32-elf-gcc.exe",
             "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
