@@ -1,2 +1,28 @@
-3x LED bar = 6 pins
-microphone = 1 pin
+1. load battery:
+  3x LED bar = 6 pins
+  microphone = 1 pin
+2. Mealy:
+  2x switch = 2 pins
+  shift register = 3 pins
+3. Pressure:
+  3x sensors = 3 pins
+4. Theremin:
+  ultraSonic = 2 pins
+  loudspeaker = 2 pins
+5. defuse bomb
+  10x cable = 10 pins
+  10x led --> led driver = 2 pins
+lcd display = 7 pins (or 11?)
+help button = 1 pin (or 2?)
+7 segment = 8 pins
+
+total: 47 pins (or 52?)
+
+esp32 1 (master)
+help button
+
+
+esp32 2 (slave1)
+7 segment
+
+esp32 3 (slave2)
