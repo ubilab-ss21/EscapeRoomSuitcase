@@ -14,9 +14,9 @@
   10x led --> led driver = 2 pins
 lcd display = 7 pins (or 11?)
 help button = 1 pin (or 2?)
-7 segment = 8 pins
+7 segment = 12 pins (or 16?)
 
-total: 47 pins (or 52?)
+total: 51 pins (or 60?)
 
 esp32 1 (master)
 help button
