@@ -2,7 +2,8 @@
  
 Goals (with descending priority):
  1. use LCD Display
- 2. make 7-segment display work
+ 2. program battery loading task (led bar + microphone) 
+ 3. make 7-segment display work
  . use OLED Display (for battery task --> LED bar works already: only alternative; very low priority)
 
  
