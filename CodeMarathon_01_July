@@ -1,10 +1,11 @@
 # Code Marathon 1.July
  
 Goals (with descending priority):
- 1. use LCD Display
- 2. program battery loading task (led bar + microphone) 
- 3. make 7-segment display work
- . use OLED Display (for battery task --> LED bar works already: only alternative; very low priority)
+0. powerbank concept (BOM?)
+1. use LCD Display
+2. program battery loading task (led bar + microphone) 
+3. make 7-segment display work
+. use OLED Display (for battery task --> LED bar works already: only alternative; very low priority)
 
  
  Reached Goals:
