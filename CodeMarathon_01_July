@@ -5,10 +5,12 @@ Goals (with descending priority):
 1. use LCD Display
 2. program battery loading task (led bar + microphone) 
 3. make 7-segment display work
-. use OLED Display (for battery task --> LED bar works already: only alternative; very low priority)
+4. use OLED Display (for battery task --> LED bar works already: only alternative; very low priority)
 
  
  Reached Goals:
  0. power bank question in session tomorrow for multiple esp32
  1. solder lcd display first
- 2. 
+ 2. led bar and microphone work --> Andi is programming this task in the next few days
+ 3. 7-segment display works, but unfortunately very low illuminance --> amplifier needed (back pack module; even saves pins (5 instead of 16)
+ 4. done only if time in the end (now with led bar)
