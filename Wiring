@@ -22,10 +22,10 @@ total: 51 pins (or 60?)
 | number of pins  | Task  | used pin numbers |
 |--------|--------|--------|
 | 1 | help button  | |
-| 8 | 4x led bar | |
-| 3 | 3x pressure sensors | |
-| 2 | ultrasonic | |
-| 1 | loudspeaker | |
+| 8 | 4x led bar | 9,10,14,27,32,33 | one missing
+| 3 | 3x pressure sensors | 35,35,38 |
+| 2 | ultrasonic | 5,18 |
+| 1 | loudspeaker | 2 |
 | 2 | 2x switch | |
 | 3 | shift register | |
 = 20 pins
