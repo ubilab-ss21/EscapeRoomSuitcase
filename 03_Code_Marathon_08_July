@@ -2,7 +2,11 @@
 
 Goals (with descending priority)
 1. Hardware wiring for all Esp32s (one master and two slaves)
-2.
+2. mqtt: 
+2a. control lcd
+2b. output of previous task for next task
+3. help button: define hints
+
 
 
 reached Goals
