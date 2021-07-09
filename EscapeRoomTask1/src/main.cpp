@@ -17,6 +17,7 @@ int fsrReading;      // the analog reading from the FSR resistor divider
 int fsrReading2;
 int fsrReading3;
 bool level;
+int leveld = 0;
 
 
 const char* ssid = "Redmi";       //Your wifi name
@@ -78,23 +79,24 @@ void taskFOrceSensing() {
     fsrReading2 = analogRead(fsrAnalogPin2);
     fsrReading2 = map(fsrReading2, 0, 4095, 0, 10);
     bar2.setLevel(fsrReading2);
-    fsrReading3 = analogRead(fsrAnalogPin3);
-    fsrReading3 = map(fsrReading3, 0, 4095, 0, 10);
-    bar4.setLevel(fsrReading3);
+    //fsrReading3 = analogRead(fsrAnalogPin3);
+    //fsrReading3 = map(fsrReading3, 0, 4095, 0, 10);
+    //bar4.setLevel(fsrReading3);
     Serial.println("Analog reading = ");
     Serial.print(fsrReading);
     Serial.print(" ");
     Serial.print(fsrReading2);
-    Serial.print(" ");
-    Serial.print(fsrReading2);
-    if (fsrReading2 == 5 and fsrReading == 5) {
-      Serial.print("LEVEL");
-      bar.toggleLed(5);
-      bar2.toggleLed(5);
-      bar3.toggleLed(5);
-      delay(2000);
+    if (fsrReading2 == 5 and fsrReading == 5 and leveld < 15) {
+      Serial.println("-----------LEVELD");
+      Serial.println(leveld);
+      leveld++;
+      delay(500);
+    }
+    if (leveld == 15){
+      level = true;
     }
     delay(500);
+
   }
 }
 
@@ -155,9 +157,9 @@ void callback(char* topic, byte* payload, unsigned int length){
 void setup(void) {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  setupWifi();
-  client.setServer(mqtt_server, 1883);
-  client.setCallback(callback);
+  //setupWifi();
+  //client.setServer(mqtt_server, 1883);
+  //client.setCallback(callback);
     // set up the LCD's number of columns and rows:
   // lcd.begin(16, 2);
   // Print a message to the LCD.
@@ -166,10 +168,10 @@ void setup(void) {
 
 void loop(void) {
 //  lastTask();
-  if (!client.connected()){
-    reconnect();
-  }
-  client.loop();
+//  if (!client.connected()){
+//    reconnect();
+//  }
+//  client.loop();
 //
 //  currentTime = millis();
 //  if(currentTime - lastTime > 10000) {
@@ -177,13 +179,15 @@ void loop(void) {
 //    snprintf(message, 75, "Count: %ld", count);
 //    Serial.print("Sending Messsage: ");
 //    Serial.println(message);
-    Serial.println("sending disaply");
-    client.publish(subTopic, "Display");
-    delay(5000);
+//    Serial.println("sending disaply");
+//    client.publish(subTopic, "Display");
+//    delay(5000);
 //    lastTime = millis();
 // }
-  //while(1){
-  //  // put your main code here, to run repeatedly:
-  //  //taskFOrceSensing();
-  //}
+  while(1){
+    // put your main code here, to run repeatedly:
+    taskFOrceSensing();
+    Serial.println("Task1 done");
+    delay(10000);
+  }
 }
