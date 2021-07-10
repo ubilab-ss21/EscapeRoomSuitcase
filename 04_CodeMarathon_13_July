@@ -1,8 +1,9 @@
 # Code Marathon
 
 Goals (with descending priority)
-1. mqtt
+1. mqtt implement in existing task with final hardware (master & slave)
 1a. mqtt help button --> led driver --> help button
+1b. led bar (mic task (1) and level task (2))
 
 
 reached Goals:
