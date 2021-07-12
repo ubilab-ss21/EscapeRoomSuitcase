@@ -1,10 +1,11 @@
 1. load battery:
-  3x LED bar = 6 pins
+  1x LED bar = 2 pins
   microphone = 1 pin
 2. Mealy:
   2x switch = 2 pins
   shift register = 3 pins
 3. Pressure:
+  3x LED bar = 8 pins
   3x pressure sensors = 3 pins
 4. Theremin:
   ultraSonic = 2 pins
@@ -42,6 +43,6 @@ total: 51 pins (or 60?)
 | number of pins  | Task  | used pin numbers |
 |--------|--------|--------|
 | 10 | bomb defuse (10x cable) | |
-| 2? | 2x led driver | |
+| 4 | 2x led driver | |
 = 12 pins
 
