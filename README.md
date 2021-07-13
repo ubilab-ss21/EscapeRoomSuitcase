@@ -30,7 +30,7 @@ The goal is to play a simple melody. A tone is played by holding your hand a cer
 
 - 8-Bit Shift Register
 
-- Sensopart FT 10-RLA laser distance sensor
+- Ultra Sonic Sensor HC-SR04
 
 ## Time plan
 
@@ -43,8 +43,8 @@ The goal is to play a simple melody. A tone is played by holding your hand a cer
 | KW 25  | Code Marathon 1 |
 | KW 26  | Code Marathon 2|
 | KW 27  | Code Marathon 3| 
-| KW 28  |
-| KW 29  | Final Presentation |
+| KW 28  | Code Marathon 4|
+| KW 29  | Assemble Suitcase + Final Presentation |
 
 ## BOM:
 https://octopart.com/bom-tool/dn4D4DHd/wdb3715TmVMupruC
