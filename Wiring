@@ -22,12 +22,12 @@ total: 51 pins (or 60?)
 ## esp32 1 (master)
 | number of pins  | Task  | used pin numbers |
 |--------|--------|--------|
-| 1 | help button  | |
+| 1 | help button  | 4 |
 | 8 | 4x led bar | 9,10,14,19,23,27,32,33, |
 | 3 | 3x pressure sensors | 34,35,38 |
 | 2 | ultrasonic | 5,18 |
 | 1 | loudspeaker | 2 |
-| 2 | 2x switch | 14,27 |
+| 2 | 2x switch | 25,26 |
 | 3 | shift register | 12,13,15 |
 | 1 | microphone | 37 |
 = 21 pins
