@@ -35,7 +35,7 @@ total: 51 pins (or 60?)
 ## esp32 2 (slave1)
 | number of pins  | Task  | used pin numbers |
 |--------|--------|--------|
-| 3 | 7 segment  | |
+| 3 | 7 segment  | 21,22 |
 | 7 | lcd display  | 5,9,10,18,19,23 |
 = 10 pins
 
